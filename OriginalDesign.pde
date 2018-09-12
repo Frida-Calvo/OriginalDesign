@@ -1,11 +1,12 @@
 void setup()
 {
-  size(500,650);
+  size(500,500);//500,650
 }
 void draw()
 {
   face();
   features();
+  bubbles();
 
 }
 
@@ -37,7 +38,10 @@ void features()
   ellipse(300,400-69,14,40);//mouth
 }
 
-// void hands()
-// {
-  
-// }
+
+void bubbles()
+{
+  noStroke();
+  fill((int)(Math.random()*250),(int)(Math.random()*250),(int)(Math.random()*250));
+  ellipse((int)(Math.random()*500), (int)(Math.random()*500), (int)(Math.random()*50), (int)(Math.random()*50));
+}
